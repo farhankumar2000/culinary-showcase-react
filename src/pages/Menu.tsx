@@ -111,7 +111,7 @@ const Menu = () => {
                   )}
                 </div>
                 
-                <CardContent className="p-6 flex-grow">
+                <CardContent className="p-3 md:p-6 flex-grow">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-display font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                       {item.name}
@@ -120,7 +120,7 @@ const Menu = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {item.description}
                   </p>
-                  <div className="mt-4 pt-4 border-t border-border">
+                  <div className="mt-2 md:mt-4 pt-2 md:pt-4 border-t border-border">
                     <span className="text-xs uppercase tracking-wider text-muted-foreground font-medium">
                       {item.category.replace('_', ' ')}
                     </span>

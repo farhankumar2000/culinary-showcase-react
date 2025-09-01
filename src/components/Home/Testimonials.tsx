@@ -95,7 +95,7 @@ const Testimonials = () => {
                   transition={{ duration: 0.5 }}
                   className="text-center"
                 >
-                  <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
+                  <div className="bg-card rounded-2xl p-4 md:p-8 shadow-card border border-border">
                     {/* Stars */}
                     <div className="flex justify-center mb-6">
                       {[...Array(testimonials[current].rating)].map((_, i) => (
@@ -104,10 +104,10 @@ const Testimonials = () => {
                     </div>
 
                     {/* Quote */}
-                    <Quote className="h-8 w-8 text-primary/30 mx-auto mb-4" />
+                    {/* <Quote className="h-8 w-8 text-primary/30 mx-auto mb-4" /> */}
                     
                     {/* Content */}
-                    <p className="text-lg text-foreground/80 leading-relaxed mb-8 italic">
+                    <p className="text-xs  md:text-lg text-foreground/80 leading-relaxed mb-4 md:b-8 italic">
                       "{testimonials[current].content}"
                     </p>
 
