@@ -25,7 +25,7 @@ export const menuItems: MenuItem[] = [
     price: 300,
     description: 'Crisp romaine lettuce with parmesan, croutons and our signature dressing',
     category: 'starters',
-    image: '/src/assets/bruschetta.jpg'
+    image: '/src/assets/caesar-salad.jpg'
   },
   {
     id: '3',
@@ -33,7 +33,7 @@ export const menuItems: MenuItem[] = [
     price: 280,
     description: 'Creamy wild mushroom soup with truffle oil and herbs',
     category: 'starters',
-    image: '/src/assets/bruschetta.jpg'
+    image: '/src/assets/mushroom-soup.jpg'
   },
 
   // Main Course
@@ -52,7 +52,7 @@ export const menuItems: MenuItem[] = [
     price: 750,
     description: 'Traditional Indian curry with tender chicken in rich tomato cream sauce',
     category: 'main',
-    image: '/src/assets/salmon.jpg'
+    image: '/src/assets/butter-chicken.jpg'
   },
   {
     id: '6',
@@ -60,7 +60,7 @@ export const menuItems: MenuItem[] = [
     price: 650,
     description: 'Grilled cottage cheese in aromatic spices and creamy tomato gravy',
     category: 'main',
-    image: '/src/assets/salmon.jpg'
+    image: '/src/assets/paneer-tikka.jpg'
   },
   {
     id: '7',
@@ -68,7 +68,7 @@ export const menuItems: MenuItem[] = [
     price: 850,
     description: 'Fragrant basmati rice with tender lamb and exotic spices',
     category: 'main',
-    image: '/src/assets/salmon.jpg'
+    image: '/src/assets/lamb-biryani.jpg'
   },
 
   // Desserts
@@ -87,7 +87,7 @@ export const menuItems: MenuItem[] = [
     price: 200,
     description: 'Traditional Indian milk dumplings in cardamom syrup',
     category: 'desserts',
-    image: '/src/assets/chocolate-cake.jpg'
+    image: '/src/assets/gulab-jamun.jpg'
   },
   {
     id: '10',
@@ -95,7 +95,7 @@ export const menuItems: MenuItem[] = [
     price: 450,
     description: 'Classic Italian dessert with coffee-soaked ladyfingers and mascarpone',
     category: 'desserts',
-    image: '/src/assets/chocolate-cake.jpg'
+    image: '/src/assets/tiramisu.jpg'
   },
 
   // Drinks
@@ -105,7 +105,7 @@ export const menuItems: MenuItem[] = [
     price: 180,
     description: 'Refreshing yogurt drink with fresh mango and cardamom',
     category: 'drinks',
-    image: '/src/assets/chocolate-cake.jpg'
+    image: '/src/assets/mango-lassi.jpg'
   },
   {
     id: '12',
@@ -113,7 +113,7 @@ export const menuItems: MenuItem[] = [
     price: 220,
     description: 'Italian espresso with steamed milk and perfect foam art',
     category: 'drinks',
-    image: '/src/assets/chocolate-cake.jpg'
+    image: '/src/assets/cappuccino.jpg'
   },
   {
     id: '13',
@@ -121,7 +121,7 @@ export const menuItems: MenuItem[] = [
     price: 150,
     description: 'Sparkling water with fresh lime juice and mint',
     category: 'drinks',
-    image: '/src/assets/chocolate-cake.jpg'
+    image: '/src/assets/lime-soda.jpg'
   },
   {
     id: '14',
@@ -129,7 +129,7 @@ export const menuItems: MenuItem[] = [
     price: 800,
     description: 'Curated selection of red and white wines from finest vineyards',
     category: 'drinks',
-    image: '/src/assets/chocolate-cake.jpg'
+    image: '/src/assets/wine-selection.jpg'
   }
 ];
 
