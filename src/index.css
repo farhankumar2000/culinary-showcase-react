@@ -2,39 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Restaurant Design System - Warm, elegant fine dining aesthetic */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core restaurant palette */
+    --background: 35 6% 97%;
+    --foreground: 25 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 8% 99%;
+    --card-foreground: 25 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 8% 99%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Rich amber/gold - signature restaurant color */
+    --primary: 43 94% 53%;
+    --primary-foreground: 25 15% 15%;
+    --primary-glow: 43 94% 63%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Warm cream tones */
+    --secondary: 35 15% 92%;
+    --secondary-foreground: 25 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted: Soft neutral tones */
+    --muted: 35 12% 90%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Deep warm brown */
+    --accent: 25 30% 25%;
+    --accent-foreground: 35 8% 99%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 35 8% 99%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 43 94% 53%;
 
     --radius: 0.5rem;
 
@@ -56,33 +60,35 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode: Sophisticated charcoal with warm accents */
+    --background: 25 15% 8%;
+    --foreground: 35 8% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 15% 10%;
+    --card-foreground: 35 8% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 15% 10%;
+    --popover-foreground: 35 8% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 43 94% 58%;
+    --primary-foreground: 25 15% 8%;
+    --primary-glow: 43 94% 68%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 12% 18%;
+    --secondary-foreground: 35 8% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 10% 16%;
+    --muted-foreground: 35 6% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 43 30% 35%;
+    --accent-foreground: 35 8% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 35 8% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 12% 20%;
+    --input: 25 12% 20%;
+    --ring: 43 94% 58%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -90,7 +96,25 @@ All colors MUST be HSL.
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 43 94% 58%;
+
+    /* Restaurant-specific design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(25 15% 8% / 0.7), hsl(43 94% 53% / 0.3));
+    --card-gradient: linear-gradient(145deg, hsl(35 8% 99%), hsl(35 15% 96%));
+    --warm-glow: linear-gradient(135deg, hsl(43 94% 53% / 0.1), hsl(25 30% 25% / 0.05));
+    
+    /* Elegant shadows */
+    --shadow-elegant: 0 4px 20px hsl(25 15% 15% / 0.08);
+    --shadow-card: 0 2px 12px hsl(25 15% 15% / 0.06);
+    --shadow-glow: 0 0 30px hsl(43 94% 53% / 0.2);
+    
+    /* Typography scale */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 }
 
@@ -100,6 +124,49 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  /* Hero section styles */
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+  
+  .warm-glow {
+    background: var(--warm-glow);
+  }
+  
+  /* Elegant animations */
+  .smooth-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .bounce-hover {
+    transition: var(--transition-bounce);
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 3px;
   }
 }
